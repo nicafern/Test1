@@ -15,7 +15,7 @@
 5. Install robotframework-ride using pip.
 6. Install selenium2library using pip.
 
-To run test:
+# To test:
 1. Open Terminal.
-2. <Python directory>/bin/pybot <UserDirectory>/Amaysim/Project1
+2. Run "<Python directory>/bin/pybot <UserDirectory>/Amaysim/Project1"
 3. To open results, look for report.html in Project Directory.  
