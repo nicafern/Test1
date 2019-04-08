@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190407 21:31:40.633" generator="Robot 3.1.1 (Python 2.7.16 on darwin)">
+<suite source="/Users/nicafernandez/PycharmProjects/Project1/Tests" id="s1" name="Tests">
+<suite source="/Users/nicafernandez/PycharmProjects/Project1/Tests/LoginTests.robot" id="s1-s1" name="LoginTests">
+<test id="s1-s1-t1" name="[LoginPage-000]-Verify if the Login link is displayed on the webpage.">
+<kw name="Launch browser" library="LoginPage">
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190407 21:31:40.800" level="INFO">Opening browser 'chrome' to base url 'https://amaysim.com.au'</msg>
+<status status="PASS" endtime="20190407 21:31:50.354" starttime="20190407 21:31:40.799"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190407 21:31:50.577" starttime="20190407 21:31:50.355"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:31:50.578" starttime="20190407 21:31:40.799"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>xpath=/html[1]/body[1]/div[2]/header[1]/div[2]/div[1]/div[2]/ul[1]/li[3]/a[1]/span[1]</arg>
+</arguments>
+<msg timestamp="20190407 21:31:50.579" level="INFO">Verifying element 'xpath=/html[1]/body[1]/div[2]/header[1]/div[2]/div[1]/div[2]/ul[1]/li[3]/a[1]/span[1]' is visible.</msg>
+<status status="PASS" endtime="20190407 21:31:50.623" starttime="20190407 21:31:50.578"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=/html[1]/body[1]/div[2]/header[1]/div[2]/div[1]/div[2]/ul[1]/li[3]/a[1]/span[1]</arg>
+</arguments>
+<msg timestamp="20190407 21:31:50.624" level="INFO">Clicking element 'xpath=/html[1]/body[1]/div[2]/header[1]/div[2]/div[1]/div[2]/ul[1]/li[3]/a[1]/span[1]'.</msg>
+<status status="PASS" endtime="20190407 21:31:53.330" starttime="20190407 21:31:50.624"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:31:53.330" critical="yes" starttime="20190407 21:31:40.798"></status>
+</test>
+<test id="s1-s1-t2" name="[LoginPage-001]-Verify if the elements in the Login page were displayed completely and correctly.">
+<kw name="Verify if username textfield is displayed." library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>id=${USER_TEXTFIELD}</arg>
+</arguments>
+<status status="PASS" endtime="20190407 21:31:53.395" starttime="20190407 21:31:53.334"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>id=${USER_TEXTFIELD}</arg>
+</arguments>
+<msg timestamp="20190407 21:31:53.396" level="INFO">Verifying element 'id=username' is visible.</msg>
+<status status="PASS" endtime="20190407 21:31:53.413" starttime="20190407 21:31:53.395"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:31:53.413" starttime="20190407 21:31:53.334"></status>
+</kw>
+<kw name="Verify if the password textfield is displayed." library="LoginPage">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>id=${PASSWORD_TEXTFIELD}</arg>
+</arguments>
+<msg timestamp="20190407 21:31:53.414" level="INFO">Verifying element 'id=password' is visible.</msg>
+<status status="PASS" endtime="20190407 21:31:53.439" starttime="20190407 21:31:53.413"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:31:53.439" starttime="20190407 21:31:53.413"></status>
+</kw>
+<kw name="Verify if the login button is displayed." library="LoginPage">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>name=${BUTTON}</arg>
+</arguments>
+<msg timestamp="20190407 21:31:53.441" level="INFO">Verifying element 'name=button' is visible.</msg>
+<status status="PASS" endtime="20190407 21:31:53.467" starttime="20190407 21:31:53.440"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:31:53.468" starttime="20190407 21:31:53.440"></status>
+</kw>
+<kw name="Verify if the forgot password link is displayed." library="LoginPage">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>link=${FORGOTPASSWORD_LINK}</arg>
+</arguments>
+<msg timestamp="20190407 21:31:53.469" level="INFO">Verifying element 'link=Forgot password?' is visible.</msg>
+<status status="PASS" endtime="20190407 21:31:53.500" starttime="20190407 21:31:53.468"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:31:53.500" starttime="20190407 21:31:53.468"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:31:53.501" critical="yes" starttime="20190407 21:31:53.332"></status>
+</test>
+<test id="s1-s1-t3" name="[Login-001]-Unsuccessfully log in as an Agent using invalid credentials.">
+<kw name="Input login credentials [Arguments] ${INVALID_USERNAME} ${INVALID_PASSWORD}" library="LoginPage">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.25</arg>
+</arguments>
+<status status="PASS" endtime="20190407 21:31:53.503" starttime="20190407 21:31:53.502"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the text value of text entry element identified by `locator`.</doc>
+<arguments>
+<arg>id=${USER_TEXTFIELD}</arg>
+</arguments>
+<status status="PASS" endtime="20190407 21:31:54.054" starttime="20190407 21:31:53.503"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=${USER_TEXTFIELD}</arg>
+<arg>${U}</arg>
+</arguments>
+<msg timestamp="20190407 21:31:54.055" level="INFO">Typing text 'invalid' into text field 'id=username'</msg>
+<status status="PASS" endtime="20190407 21:31:54.971" starttime="20190407 21:31:54.055"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the text value of text entry element identified by `locator`.</doc>
+<arguments>
+<arg>id=${PASSWORD_TEXTFIELD}</arg>
+</arguments>
+<status status="PASS" endtime="20190407 21:31:55.521" starttime="20190407 21:31:54.972"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=${PASSWORD_TEXTFIELD}</arg>
+<arg>${P}</arg>
+</arguments>
+<msg timestamp="20190407 21:31:55.522" level="INFO">Typing password into text field 'id=password'</msg>
+<status status="PASS" endtime="20190407 21:31:56.415" starttime="20190407 21:31:55.522"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:31:56.415" starttime="20190407 21:31:53.502"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
+<arguments>
+<arg>css=div.form-row:nth-child(5) &gt; small.form-inline-message.error</arg>
+<arg>${INVALID_USER_MESSAGE}</arg>
+<arg>message="Incorrect error message."</arg>
+</arguments>
+<msg timestamp="20190407 21:31:56.416" level="INFO">Verifying element 'css=div.form-row:nth-child(5) &gt; small.form-inline-message.error' contains exactly text 'Please enter a complete email address e.g. john.smith@mail.com.au'.</msg>
+<status status="PASS" endtime="20190407 21:31:56.971" starttime="20190407 21:31:56.415"></status>
+</kw>
+<kw name="Click login button" library="LoginPage">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>name=${BUTTON}</arg>
+</arguments>
+<msg timestamp="20190407 21:31:56.973" level="INFO">Clicking button 'name=button'.</msg>
+<status status="PASS" endtime="20190407 21:31:58.342" starttime="20190407 21:31:56.973"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:31:58.343" starttime="20190407 21:31:56.972"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:31:58.343" critical="yes" starttime="20190407 21:31:53.501"></status>
+</test>
+<test id="s1-s1-t4" name="[Login-002]-Unsuccessfully log in as an Agent using an invalid username but correct password.">
+<kw name="Input login credentials [Arguments] ${INVALID_USERNAME} ${VALID_PASSWORD}" library="LoginPage">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.25</arg>
+</arguments>
+<status status="PASS" endtime="20190407 21:31:58.347" starttime="20190407 21:31:58.346"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the text value of text entry element identified by `locator`.</doc>
+<arguments>
+<arg>id=${USER_TEXTFIELD}</arg>
+</arguments>
+<status status="PASS" endtime="20190407 21:31:58.909" starttime="20190407 21:31:58.347"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=${USER_TEXTFIELD}</arg>
+<arg>${U}</arg>
+</arguments>
+<msg timestamp="20190407 21:31:58.910" level="INFO">Typing text 'invalid' into text field 'id=username'</msg>
+<status status="PASS" endtime="20190407 21:31:59.780" starttime="20190407 21:31:58.909"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the text value of text entry element identified by `locator`.</doc>
+<arguments>
+<arg>id=${PASSWORD_TEXTFIELD}</arg>
+</arguments>
+<status status="PASS" endtime="20190407 21:32:00.350" starttime="20190407 21:31:59.780"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=${PASSWORD_TEXTFIELD}</arg>
+<arg>${P}</arg>
+</arguments>
+<msg timestamp="20190407 21:32:00.351" level="INFO">Typing password into text field 'id=password'</msg>
+<status status="PASS" endtime="20190407 21:32:01.223" starttime="20190407 21:32:00.350"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:32:01.223" starttime="20190407 21:31:58.346"></status>
+</kw>
+<kw name="Click login button" library="LoginPage">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>name=${BUTTON}</arg>
+</arguments>
+<msg timestamp="20190407 21:32:01.224" level="INFO">Clicking button 'name=button'.</msg>
+<status status="PASS" endtime="20190407 21:32:02.590" starttime="20190407 21:32:01.224"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:32:02.590" starttime="20190407 21:32:01.223"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:32:02.591" critical="yes" starttime="20190407 21:31:58.344"></status>
+</test>
+<test id="s1-s1-t5" name="[Login-003]-Unsuccessfully log in as an Agent using a valid username but incorrect password.">
+<kw name="Input login credentials [Arguments] ${VALID_USERNAME} ${INVALID_PASSWORD}" library="LoginPage">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.25</arg>
+</arguments>
+<status status="PASS" endtime="20190407 21:32:02.595" starttime="20190407 21:32:02.594"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the text value of text entry element identified by `locator`.</doc>
+<arguments>
+<arg>id=${USER_TEXTFIELD}</arg>
+</arguments>
+<status status="PASS" endtime="20190407 21:32:03.138" starttime="20190407 21:32:02.595"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=${USER_TEXTFIELD}</arg>
+<arg>${U}</arg>
+</arguments>
+<msg timestamp="20190407 21:32:03.139" level="INFO">Typing text '0468340754' into text field 'id=username'</msg>
+<status status="PASS" endtime="20190407 21:32:04.008" starttime="20190407 21:32:03.139"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the text value of text entry element identified by `locator`.</doc>
+<arguments>
+<arg>id=${PASSWORD_TEXTFIELD}</arg>
+</arguments>
+<status status="PASS" endtime="20190407 21:32:04.554" starttime="20190407 21:32:04.009"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=${PASSWORD_TEXTFIELD}</arg>
+<arg>${P}</arg>
+</arguments>
+<msg timestamp="20190407 21:32:04.555" level="INFO">Typing password into text field 'id=password'</msg>
+<status status="PASS" endtime="20190407 21:32:05.423" starttime="20190407 21:32:04.554"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:32:05.423" starttime="20190407 21:32:02.593"></status>
+</kw>
+<kw name="Click login button" library="LoginPage">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>name=${BUTTON}</arg>
+</arguments>
+<msg timestamp="20190407 21:32:05.425" level="INFO">Clicking button 'name=button'.</msg>
+<status status="PASS" endtime="20190407 21:32:06.784" starttime="20190407 21:32:05.424"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:32:06.784" starttime="20190407 21:32:05.424"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:32:06.785" critical="yes" starttime="20190407 21:32:02.592"></status>
+</test>
+<test id="s1-s1-t6" name="[Login-004]-Successfully log in the application using valid credentials.">
+<kw name="Input login credentials [Arguments] ${VALID_USERNAME} ${VALID_PASSWORD}" library="LoginPage">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.25</arg>
+</arguments>
+<status status="PASS" endtime="20190407 21:32:06.788" starttime="20190407 21:32:06.788"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the text value of text entry element identified by `locator`.</doc>
+<arguments>
+<arg>id=${USER_TEXTFIELD}</arg>
+</arguments>
+<status status="PASS" endtime="20190407 21:32:11.350" starttime="20190407 21:32:06.788"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=${USER_TEXTFIELD}</arg>
+<arg>${U}</arg>
+</arguments>
+<msg timestamp="20190407 21:32:11.351" level="INFO">Typing text '0468340754' into text field 'id=username'</msg>
+<status status="PASS" endtime="20190407 21:32:12.241" starttime="20190407 21:32:11.350"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the text value of text entry element identified by `locator`.</doc>
+<arguments>
+<arg>id=${PASSWORD_TEXTFIELD}</arg>
+</arguments>
+<status status="PASS" endtime="20190407 21:32:12.794" starttime="20190407 21:32:12.241"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>id=${PASSWORD_TEXTFIELD}</arg>
+<arg>${P}</arg>
+</arguments>
+<msg timestamp="20190407 21:32:12.795" level="INFO">Typing password into text field 'id=password'</msg>
+<status status="PASS" endtime="20190407 21:32:13.717" starttime="20190407 21:32:12.794"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:32:13.717" starttime="20190407 21:32:06.787"></status>
+</kw>
+<kw name="Click login button" library="LoginPage">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>name=${BUTTON}</arg>
+</arguments>
+<msg timestamp="20190407 21:32:13.720" level="INFO">Clicking button 'name=button'.</msg>
+<status status="PASS" endtime="20190407 21:32:15.113" starttime="20190407 21:32:13.719"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:32:15.114" starttime="20190407 21:32:13.718"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=SuccessfulLogin.png</arg>
+</arguments>
+<msg timestamp="20190407 21:32:39.180" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="SuccessfulLogin.png"&gt;&lt;img src="SuccessfulLogin.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190407 21:32:39.180" starttime="20190407 21:32:15.116"></status>
+</kw>
+<status status="PASS" endtime="20190407 21:32:39.181" critical="yes" starttime="20190407 21:32:06.786"></status>
+</test>
+<status status="PASS" endtime="20190407 21:32:39.183" starttime="20190407 21:31:40.665"></status>
+</suite>
+<status status="PASS" endtime="20190407 21:32:39.188" starttime="20190407 21:31:40.637"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="6">Critical Tests</stat>
+<stat fail="0" pass="6">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Tests" pass="6">Tests</stat>
+<stat fail="0" id="s1-s1" name="LoginTests" pass="6">Tests.LoginTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

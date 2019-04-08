@@ -1,0 +1,6 @@
+#!/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python
+
+import sys
+from robot import run_cli
+
+run_cli(sys.argv[1:])
