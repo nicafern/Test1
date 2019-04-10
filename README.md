@@ -28,4 +28,4 @@
 # To test:
 1. Open Terminal.
 2. Run "<Python directory>/bin/pybot <UserDirectory>/Amaysim/Project1"
-3. To open results, look for report.html in Project Directory.  
+3. To open results, look for report.html and/or log.html in Project Directory.  
