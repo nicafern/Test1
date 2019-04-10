@@ -1,3 +1,13 @@
+#Project Description
+
+  Tests are written using the robot framework. 
+  
+#Scope
+
+  Login Pahe
+  Dashboard look and feel
+  Personal Details Section
+  
 # Setup
 1. Install python.
   $ python
