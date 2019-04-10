@@ -1,8 +1,8 @@
-#Project Description
+# Project Description
 
-  Tests are written using the robot framework. 
+  This projects tests https://amaysim.com.au. Tests are written using the robot framework. 
   
-#Scope
+# Test Scope
 
   Login Pahe
   Dashboard look and feel
