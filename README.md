@@ -1,6 +1,6 @@
 # Project Description
 
-  This projects tests https://amaysim.com.au. Tests are written using the robot framework. 
+  This projects tests https://www.amaysim.com.au. Tests are written using the robot framework. 
   
 # Test Scope
 
@@ -29,3 +29,5 @@
 1. Open Terminal.
 2. Run "<Python directory>/bin/pybot <UserDirectory>/Amaysim/Project1"
 3. To open results, look for report.html and/or log.html in Project Directory.  
+
+Note: Added a report.html and log.html files for reference. 
